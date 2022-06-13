@@ -3,7 +3,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class ConnectionSQLite {
-    public static void connect() {
+    public static void main(String[] args) {
         Connection conn = null;
         try {
             String url = "jdbc:sqlite:sqlite_database_2022.db";

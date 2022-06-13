@@ -8,10 +8,6 @@ public class PrintJDBCDrivers {
             Driver driver = e.nextElement();
             dadosDoDriver(driver);
         }
-
-        ConnectionSQLite connectionSQLite = new ConnectionSQLite();
-        connectionSQLite.connect();
-        
     }
 
     public static void dadosDoDriver(Driver driver) {
