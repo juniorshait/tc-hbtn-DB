@@ -4,6 +4,9 @@ import java.sql.SQLException;
 
 public class ConnectionSQLite {
     public static void main(String[] args) {
+        initConnection();
+    }
+    public static void initConnection(){
         Connection conn = null;
         try {
             String url = "jdbc:sqlite:sqlite_database_2022.db";
