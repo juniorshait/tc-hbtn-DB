@@ -43,7 +43,7 @@ public class GestaoCursosMain {
         aluno.setTelefone(listaTelefone);
         listaEndereco.add(endereco);
         aluno.setEndereco(listaEndereco);
-        aluno.setDataDeNascimento(LocalDate.of(1999, 05, 14));
+        aluno.setDatadenascimento(LocalDate.of(1999, 05, 14));
         listaAluno.add(aluno);
         alunoModel.create(aluno);
 
@@ -65,14 +65,14 @@ public class GestaoCursosMain {
         //2) Buscando todos os alunos na base de dados
         List<Aluno> alunos = alunoModel.findAll();
         for (Aluno aluno1:alunos) {
-            System.out.println(aluno1.getId()+" "+aluno1.getNomecompleto()+" "+aluno1.getDataDeNascimento()+" "
+            System.out.println(aluno1.getId()+" "+aluno1.getNomecompleto()+" "+aluno1.getDatadenascimento()+" "
                     +aluno1.getEmail()+" "+aluno1.getMatricula()+" "+aluno1.getTelefone()+" "+
                     aluno1.getEndereco());
         }
 
         //3) Buscar um Aluno por Id
         Aluno aluno1 = alunoModel.findById(aluno.getId());
-        System.out.println(aluno1.getId()+" "+aluno1.getNomecompleto()+" "+aluno1.getDataDeNascimento()+" "
+        System.out.println(aluno1.getId()+" "+aluno1.getNomecompleto()+" "+aluno1.getDatadenascimento()+" "
                 +aluno1.getEmail()+" "+aluno1.getMatricula()+" "+aluno1.getTelefone()+" "+
                 aluno1.getEndereco());
 
@@ -89,12 +89,12 @@ public class GestaoCursosMain {
         aluno.setTelefone(listaTelefone);
         listaEndereco.add(endereco);
         aluno.setEndereco(listaEndereco);
-        aluno.setDataDeNascimento(LocalDate.of(1999, 05, 14));
+        aluno.setDatadenascimento(LocalDate.of(1999, 05, 14));
         listaAluno.add(aluno);
 
         Aluno alunoModelById = alunoModel.findById(aluno.getId());
         System.out.println("Aluno atualizado: ");
-        System.out.println(aluno1.getId()+" "+aluno1.getNomecompleto()+" "+aluno1.getDataDeNascimento()+" "
+        System.out.println(aluno1.getId()+" "+aluno1.getNomecompleto()+" "+aluno1.getDatadenascimento()+" "
                 +aluno1.getEmail()+" "+aluno1.getMatricula()+" "+aluno1.getTelefone()+" "+
                 aluno1.getEndereco());
 

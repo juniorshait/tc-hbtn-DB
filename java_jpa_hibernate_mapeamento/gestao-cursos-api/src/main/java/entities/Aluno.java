@@ -21,7 +21,7 @@ public class Aluno {
     @Column(nullable = false)
     private String matricula;
     @Column(nullable = false)
-    private LocalDate dataDeNascimento;
+    private LocalDate datadenascimento;
     @Column(nullable = false)
     private String email;
     @OneToMany(cascade = CascadeType.ALL)
@@ -37,7 +37,7 @@ public class Aluno {
                 "id=" + id +
                 ", nomecompleto='" + nomecompleto + '\'' +
                 ", matricula='" + matricula + '\'' +
-                ", dataDeNascimento=" + dataDeNascimento +
+                ", dataDeNascimento=" + datadenascimento +
                 ", email='" + email + '\'' +
                 ", endereco=" + endereco +
                 ", telefone=" + telefone +
